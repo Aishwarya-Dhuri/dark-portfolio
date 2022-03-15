@@ -2,6 +2,31 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap");
 @import url("/css/animate.min.css");
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background-color: #293340;
+  border-radius: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #cd5ff8;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #7539d2;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -1036,6 +1061,10 @@ footer p {
       -ms-flex-align: center;
           align-items: center;
   cursor: pointer;
+}
+
+.theme-mode:hover {
+  background-color: #7539d2;
 }
 
 .theme-mode i {

@@ -12,7 +12,29 @@ $dim-white:#d6d9e0;
 $cardbg:#293340;
 $footerbglight:#ece9fd;
 $cardbglight:#f4f4f4;
+html { 
+  scroll-behavior: smooth; 
+}
+::-webkit-scrollbar {
+  width: 20px;
+}
 
+/* Track */
+::-webkit-scrollbar-track {
+  background-color: $cardbg;
+  border-radius: 5px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $violet; 
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: $darkviolet; 
+}
 *{
     margin: 0;
     padding: 0;
@@ -818,6 +840,9 @@ footer{
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  &:hover{
+    background-color: $darkviolet;
+  }
   i{
     font-size: 30px;
     color: $white;

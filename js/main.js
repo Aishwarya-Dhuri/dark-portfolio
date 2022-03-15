@@ -15,6 +15,14 @@ var options = {
 
   //fixed header
   $(document).ready(() => {
+    $('body').awesomeCursor('paper-plane',{
+        color:'#fff',
+        outline:'#cd5ff8',
+        size: 32,
+        flip: 'horizontal'
+
+    });
+
         //NavBar Drop Shadow on scroll
         $(window).scroll(function () {
             if ($(window).scrollTop() > 100) {
@@ -23,6 +31,16 @@ var options = {
             $('.nav-bar').removeClass('floatingNav');
             }
         });
+        
+        //scroll to that section minus header fixed height
+        $(".headernav a").on("click", function (e) {
+            // 1
+            e.preventDefault();
+            // 2
+            const href = $(this).attr("href");
+            // 3
+            $("html, body").animate({ scrollTop: $(href).offset().top -120 }, 100);
+          });
         
   //change theme toggle
   const theme_mode = document.getElementById('theme-mode');
