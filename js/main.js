@@ -66,6 +66,13 @@ var options = {
 
   //Dynamic projects sec
   document.addEventListener("DOMContentLoaded", function(event) {     
+      const burger = document.getElementById('burger');
+const ul = document.querySelector('nav ul');
+
+burger.addEventListener('click', () => {
+	burger.classList.toggle('show-x');
+	ul.classList.toggle('show');
+});
     new WOW().init();
 
     const projectsObj = [
@@ -139,9 +146,11 @@ var options = {
     
       projectsObj.forEach(item =>{
           const proj=document.createElement("div");
-          proj.classList.add("col-md-4");
+          proj.classList.add("col-lg-4");
+          proj.classList.add("col-md-6");
 
-        proj.innerHTML=`<div class="projectcard">
+
+        proj.innerHTML=`<div class="projectcard wow fadeIn" data-wow-delay="0.2s">
                                 <img src=${item.img_path} class="projimg" alt=""/>
                                 <div class="projectinfo">
                                     <h4 class="projname">${item.name}</h4>
