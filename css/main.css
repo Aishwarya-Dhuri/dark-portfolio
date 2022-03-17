@@ -1086,6 +1086,10 @@ body.light-mode .skillcard:hover {
   color: #000;
 }
 
+body.light-mode .timelinecontainer .date {
+  color: #b0b0b0;
+}
+
 body.light-mode .social-icons li:hover {
   color: #fff;
 }
@@ -1225,6 +1229,12 @@ body.light-mode p {
   }
   header h1 {
     font-size: 2em;
+  }
+  body.light-mode ul.headernav {
+    background-color: #fff;
+  }
+  body.light-mode .timelinecontainer.left .date, body.light-mode .timelinecontainer.right .date {
+    color: #000;
   }
   .burger {
     display: block;
@@ -1406,6 +1416,9 @@ body.light-mode p {
   }
   .bannersec, .abtsec, .skillsec, .educationsec, .experiencesec {
     margin: 0 0 70px 0;
+  }
+  .bannersec {
+    margin-bottom: 100px;
   }
   .timelinecontainer.left .icon, .timelinecontainer.right .icon {
     display: none;

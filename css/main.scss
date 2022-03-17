@@ -867,6 +867,10 @@ body.light-mode{
     background-color: $cardbglight;
     color: $black;
   }
+  .timelinecontainer .date{
+    color: #b0b0b0;
+
+  }
   .social-icons li {
     &:hover{
       color: $white;
@@ -1002,7 +1006,16 @@ body.light-mode{
   header h1 {
 		font-size: 2em;
 	}
-	
+	body.light-mode{
+    ul.headernav{
+      background-color: $white;
+    }
+  }
+  body.light-mode{
+    .timelinecontainer.left .date, .timelinecontainer.right .date{
+      color: $black;
+    }
+  }
 .burger{
   display: block;
     background: transparent;
@@ -1157,6 +1170,7 @@ body.light-mode{
   }
 }
 @media screen and (max-width: 575px) {
+ 
   h4 {
     font-size: 1.1rem;
     line-height: 30px;
@@ -1198,6 +1212,10 @@ body.light-mode{
   }
   .bannersec, .abtsec, .skillsec, .educationsec, .experiencesec {
     margin: 0 0 70px 0;
+}
+.bannersec{
+  margin-bottom: 100px;
+
 }
 .timelinecontainer.left .icon, .timelinecontainer.right .icon{
   display: none;
