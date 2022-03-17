@@ -92,6 +92,7 @@ h1,h2,h3,h4,h5{
   font-family: 'Dancing Script', cursive;
   font-size: 36px;
   color: $white;
+  font-weight: bold;
   margin-bottom: 0;
 }
 ul.headernav {
@@ -833,6 +834,9 @@ footer{
     color: $white;
   }
 }
+.showmob{
+  display: none;
+}
 #moon{
   display: none;
 }
@@ -963,6 +967,12 @@ body.light-mode{
     }
 }
 @media (max-width: 768px) {
+  .hidemob{
+    display: none !important;
+  }
+  .showmob{
+    display: block;
+  }
   .nav-bar{
     padding: 15px 20px;
 
@@ -991,8 +1001,8 @@ body.light-mode{
         -moz-transform: rotate(45deg);
         -o-transform: rotate(45deg);
         transform: rotate(45deg);
-        top: 0px;
-    left: 2px;  
+        top: 2px;
+    left: 0px; 
       }
       .bar:nth-child(2) {
         width: 0%;
@@ -1003,8 +1013,8 @@ body.light-mode{
       -moz-transform: rotate(-45deg);
       -o-transform: rotate(-45deg);
       transform: rotate(-45deg);
-      top: 25px;
-    left: 0px;
+      top: 20px;
+      left: 0px;
       }
     } 
     
@@ -1012,10 +1022,10 @@ body.light-mode{
       background-color: $violet;
       position: absolute;
       height: 3px;
-      width: 35px;
+      width: 25px;
       transition: transform 0.2s ease;
       &:nth-child(1){
-        top: 0px;
+        top: 4px;
         -webkit-transform-origin: left center;
         -moz-transform-origin: left center;
         -o-transform-origin: left center;
@@ -1029,7 +1039,7 @@ body.light-mode{
         transform-origin: left center;
       }
       &:nth-child(3){
-        top: 25px;
+        top: 20px;
         -webkit-transform-origin: left center;
         -moz-transform-origin: left center;
         -o-transform-origin: left center;
@@ -1067,13 +1077,21 @@ body.light-mode{
 		margin: 15px;
 	}
   .timeline::after {
-    left: 90px;
+    left: 0;
   }
-
+  .timeline{
+    padding: 0;
+  }
   .timelinecontainer {
     width: 100%;
-    padding-left: 120px;
-    padding-right: 30px;
+    padding-left: 50px;
+    padding-right: 0;
+    &:last-child{
+      padding-bottom: 0;
+    }
+    &:first-child{
+      padding-top: 0;
+    }
   }
 
   .timelinecontainer.right {
@@ -1082,31 +1100,38 @@ body.light-mode{
 
   .timelinecontainer.left::after, 
   .timelinecontainer.right::after {
-    left: 82px;
+    left: -8px;
   }
 
   .timelinecontainer.left::before,
   .timelinecontainer.right::before {
-    left: 100px;
+    left: 0;
     border-color: transparent #006E51 transparent transparent;
   }
 
   .timelinecontainer.left .date,
   .timelinecontainer.right .date {
-    right: auto;
-    left: 15px;
+    right: 0;
+    left: auto;
+    position: relative;
+    color: $dim-white;
+    font-weight: 400;
+    text-transform: capitalize;
+    margin-bottom: 5px;
+    text-align: left;
+
   }
 
   .timelinecontainer.left .icon,
   .timelinecontainer.right .icon {
     right: auto;
-    left: 146px;
+    left: 80px;
   }
 
   .timelinecontainer.left .content,
   .timelinecontainer.right .content {
     padding: 30px 30px 30px 90px;
-    border-radius: 500px 0 0 500px;
+    border-radius: 0;
   }
 }
 @media screen and (max-width: 767px) {
@@ -1121,14 +1146,75 @@ body.light-mode{
   }
 }
 @media screen and (max-width: 575px) {
+  h4 {
+    font-size: 1.1rem;
+    line-height: 30px;
+    margin-bottom: 0;
+
+}
+.educard{
+  padding-left: 75px;
+  &:first-of-type{
+    margin-bottom: 30px;
+
+  }
+}
+  .skillcard{
+    padding: 10px;
+    .skillname{
+      font-size: 16px;
+
+    }
+  }
+  .skillscontainer>*{
+    width: 50%;
+  }
+  .jsonpara {
+    font-size: 16px;
+    padding-left: 0px;
+}
+  .theme-mode{
+    width: 50px;
+    height: 40px;
+    i{
+      font-size: 24px;
+    }
+  }
+
+  footer{
+    padding: 55px 0 20px 0;
+
+  }
   .bannersec, .abtsec, .skillsec, .educationsec, .experiencesec {
     margin: 0 0 70px 0;
 }
+.timelinecontainer.left .icon, .timelinecontainer.right .icon{
+  display: none;
+}
+.timelinecontainer.left .content, .timelinecontainer.right .content{
+  padding: 15px;
+
+}
+.projectcard{
+  margin-bottom: 30px;
+  .projectinfo{
+    min-height: auto;
+  }
+}
+.projectsec{
+  .tab-content{
+    margin-top: 30px;
+  }
+  .nav-tabs .nav-link{
+    font-size: 16px;
+      margin: 0px 15px;
+  }
+} 
 .skillscontainer{
   margin-top: 0;
 }
   .brandname {
-    font-size: 26px;
+    font-size: 30px;
 
   }
   p.jsonpara{

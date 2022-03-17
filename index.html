@@ -18,11 +18,10 @@
         <i class="fas fa-sun" id="sun" title="Switch to dark mode"></i>
         <i class="fas fa-moon" id="moon" title="Switch to light mode"></i>
     </div>
-    <header class="container" id="home">
+    <header class="container" id="topheader">
         <nav class="nav-bar">
             <p class="brandname">
-                <span>
-                    <<span>Aishwarya Dhuri<span>/></span>
+                <span><<span>Aishwarya Dhuri<span>/></span>
             </p>
             <button id="burger" class="burger">
                 <div class="bar"></div>
@@ -32,8 +31,7 @@
             </button>
 
             <ul class="headernav">
-                <li><a href="#home" class="smoothscroll">Home</a></li>
-                <li><a href="#abtsec" class="smoothscroll">About</a></li>
+                <li><a href="#abtsec" class="smoothscroll">About Me</a></li>
                 <li><a href="#skillsec" class="smoothscroll">Skills</a></li>
                 <li><a href="#experiencesec" class="smoothscroll">Experience</a></li>
                 <li><a href="#projectsec" class="smoothscroll">Projects</a></li>
@@ -167,7 +165,7 @@
             </div>
 
             <div class="row skillscontainer">
-                <div class="col-lg-2 col-md-3 col-sm-6 col-">
+                <div class="col-lg-2 col-md-3 col-sm-6 col-xs-6">
                     <div class="skillcard wow slideInUp" data-wow-delay="0.2s">
                         <img src="/images/skills/html.svg" alt="" />
                         <h4 class="skillname">Html5</h4>
@@ -255,7 +253,7 @@
                 <div class="col-md-8">
                     <div class="educard wow fadeInUp" data-wow-delay="0.2s">
                         <h4 class="coursename">Master of Business Administration in IT management</h4>
-                        <p class="eduyr">DY Patil : 2022 - 2023 </p>
+                        <p class="eduyr">Dr. DY Patil Vidyapeeth : 2022 - 2023 </p>
                     </div>
                     <div class="educard wow fadeInUp" data-wow-delay="0.2s">
                         <h4 class="coursename">Bachelor's Degree in Computer Science</h4>
@@ -271,49 +269,54 @@
             <div class="row">
                 <div class="col-md-12 text-center">
                     <h2 class="gradient-text wow fadeInUp" data-wow-delay="0.2s"><span>
-                            <span>
-                                <<span>Experience<span>/></span></h2>
+                            <span><<span>Experience<span>/></span></h2>
                 </div>
             </div>
 
             <div class="timeline">
                 <div class="timelinecontainer left">
-                    <div class="date">May 2021 - Present</div>
+                    <div class="date hidemob">May 2021 - Present</div>
                     <i class="icon fa fa-briefcase"></i>
                     <div class="content">
                         <h2>Accelya</h2>
+                        <div class="date showmob">May 2021 - Present</div>
                         <p>
                             UI Developer
                         </p>
                     </div>
                 </div>
                 <div class="timelinecontainer right">
-                    <div class="date">Nov 2019 - Apr 2021</div>
+                    <div class="date hidemob">Nov 2019 - Apr 2021</div>
                     <i class="icon fa fa-briefcase"></i>
                     <div class="content">
                         <h2>Somaiya Vidyavihar University
                         </h2>
+                        <div class="date showmob">Nov 2019 - Apr 2021</div>
                         <p>
                             Front End Developer
                         </p>
                     </div>
                 </div>
                 <div class="timelinecontainer left">
-                    <div class="date">Oct 2018 - July 2019</div>
+                    <div class="date hidemob">Oct 2018 - July 2019</div>
                     <i class="icon fa fa-briefcase"></i>
                     <div class="content">
                         <h2>Techease Systems Pvt Ltd
                         </h2>
+                        <div class="date showmob">Oct 2018 - July 2019</div>
+
                         <p>
                             Jr. UI/UX Developer
                         </p>
                     </div>
                 </div>
                 <div class="timelinecontainer right">
-                    <div class="date">Oct 2017 - Sept 2018</div>
+                    <div class="date hidemob">Oct 2017 - Sept 2018</div>
                     <i class="icon fa fa-briefcase"></i>
                     <div class="content">
                         <h2>Webcubic Technologies</h2>
+                        <div class="date showmob">Oct 2017 - Sept 2018</div>
+
                         <p>
                             Web Designer
                         </p>
@@ -327,8 +330,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12 text-center">
-                    <h2 class="gradient-text wow fadeInUp" data-wow-delay="0.2s"><span>
-                            <<span>Projects<span>/></span></h2>
+                    <h2 class="gradient-text wow fadeInUp" data-wow-delay="0.2s">
+                        <span><<span>Projects<span>/></span></h2>
                 </div>
             </div>
             <div class="row">
@@ -377,7 +380,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <div id="go-top" class="go-topbtn">
-                        <a class="smoothscroll" title="Back to Top" href="#home"><i class="fa fa-angle-up"
+                        <a class="smoothscroll" title="Back to Top" href="#topheader"><i class="fa fa-angle-up"
                                 aria-hidden="true"></i>
                         </a>
                     </div>
@@ -390,14 +393,12 @@
                                 <i class="fa fa-linkedin contact-social"></i>
                             </a>
                         </li>
-
                         <li class="wow zoomIn" data-wow-delay="0.3s">
                             <a id="instagram" href="https://www.instagram.com/miss_aishya/" target="_blank"
                                 rel="noopener" alt="instagram">
                                 <i class="fa fa-instagram contact-social"></i>
                             </a>
                         </li>
-
                         <li class="wow zoomIn" data-wow-delay="0.3s">
                             <a id="whatsapp"
                                 href="https://api.whatsapp.com/send?phone=919326644875&amp;text=Hi%20Aishwarya%20%F0%9F%91%8B"
@@ -405,42 +406,33 @@
                                 <i class="fa fa-whatsapp contact-social"></i>
                             </a>
                         </li>
-
                         <li class="wow zoomIn" data-wow-delay="0.3s">
                             <a id="github" href="https://github.com/Aishwarya-Dhuri" target="_blank" rel="noopener"
                                 alt="github">
                                 <i class="fa fa-github contact-social"></i>
                             </a>
                         </li>
-
                         <li class="wow zoomIn" data-wow-delay="0.3s">
                             <a id="facebook" href="https://www.facebook.com/aishwarya.dhuri.3" target="_blank"
                                 rel="noopener" alt="facebook">
                                 <i class="fa fa-facebook contact-social"></i>
                             </a>
                         </li>
-
                         <li class="wow zoomIn" data-wow-delay="0.3s">
                             <a id="github" href="mailto:aishwaryadhuri456@gmail.com" target="_blank" rel="noopener"
                                 alt="github">
                                 <i class="fa fa-envelope-o" aria-hidden="true"></i>
                             </a>
                         </li>
-
                     </ul>
 
                     <p class="text-center">Made with ❤️ by Aishwarya Dhuri</p>
                     <p class="text-center copyright">© Copyright 2022</p>
-
                 </div>
-
-
             </div>
         </div>
 
     </footer>
-
-
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
@@ -452,8 +444,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
         integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="js/cursor.js"></script>
     <script src="js/main.js"></script>
 </body>
-
 </html>

@@ -15,14 +15,7 @@ var options = {
 
   //fixed header
   $(document).ready(() => {
-    $('body').awesomeCursor('paper-plane',{
-        color:'#fff',
-        outline:'#cd5ff8',
-        size: 32,
-        flip: 'horizontal'
-
-    });
-
+  
         //NavBar Drop Shadow on scroll
         $(window).scroll(function () {
             if ($(window).scrollTop() > 100) {
