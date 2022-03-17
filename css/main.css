@@ -69,8 +69,9 @@ h1, h2, h3, h4, h5 {
 }
 
 .nav-bar.floatingNav {
-  -webkit-backdrop-filter: blur(15px) !important;
-          backdrop-filter: blur(15px) !important;
+  -webkit-box-shadow: 0 1px 10px #051020;
+          box-shadow: 0 1px 10px #051020;
+  background-color: #cd5ff8;
 }
 
 .burger {
@@ -110,16 +111,23 @@ ul.headernav li {
 }
 
 ul.headernav li a {
-  color: #d6d9e0;
+  color: #fff;
   position: relative;
   text-decoration: none;
   font-size: 18px;
   font-weight: 600;
+  opacity: 0.8;
 }
 
 ul.headernav li a:active, ul.headernav li a:hover {
   color: #cd5ff8;
   outline: none;
+  opacity: 1;
+}
+
+.nav-bar.floatingNav ul.headernav li a:hover {
+  color: #fff;
+  opacity: 1;
 }
 
 .gradient-text {
@@ -1049,7 +1057,7 @@ footer p {
 }
 
 .showmob {
-  display: none;
+  display: none !important;
 }
 
 #moon {
@@ -1199,7 +1207,7 @@ body.light-mode p {
     display: none !important;
   }
   .showmob {
-    display: block;
+    display: block !important;
   }
   .nav-bar {
     padding: 15px 20px;
