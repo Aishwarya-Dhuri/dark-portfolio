@@ -113,7 +113,7 @@ burger.addEventListener('click', () => {
         },
         {
             name : 'Examluck',
-            description: 'build  website from stratch using bootstrap 3, html,css and JS using Somaiya brand guidelines',
+            description: 'build  website from stratch using bootstrap 3, html,css and JS with Ui design',
             img_path: 'images/projects/examluck.jpg',
             live_link : 'https://aishwarya-dhuri.github.io/examluck/index.html',
             github_link: 'https://github.com/Aishwarya-Dhuri/examluck'

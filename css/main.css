@@ -673,7 +673,7 @@ h2.gradient-text {
   content: '';
   position: absolute;
   width: 2px;
-  background: #006E51;
+  background: #8e8c8f;
   top: 0;
   bottom: 0;
   left: 50%;
@@ -703,7 +703,7 @@ h2.gradient-text {
   top: calc(50% - 8px);
   right: -8px;
   background: #ffffff;
-  border: 2px solid #006E51;
+  border: 2px solid #8e8c8f;
   border-radius: 16px;
   z-index: 1;
 }
@@ -719,7 +719,7 @@ h2.gradient-text {
   height: 2px;
   top: calc(50% - 1px);
   right: 8px;
-  background: #006E51;
+  background: #8e8c8f;
   z-index: 1;
 }
 
@@ -737,6 +737,7 @@ h2.gradient-text {
   color: #d6d9e0;
   text-transform: uppercase;
   letter-spacing: 1px;
+  z-index: 1;
   z-index: 1;
 }
 
@@ -787,7 +788,7 @@ h2.gradient-text {
 .timelinecontainer .content h2 {
   margin: 0 0 10px 0;
   font-size: 18px;
-  font-weight: normal;
+  font-weight: 600;
   color: #cd5ff8;
 }
 
@@ -795,7 +796,8 @@ h2.gradient-text {
   margin: 0;
   font-size: 16px;
   line-height: 22px;
-  color: #d6d9e0;
+  color: #fff;
+  font-weight: 500;
 }
 
 .projectsec {
@@ -1065,7 +1067,7 @@ footer p {
 }
 
 body.light-mode {
-  background-color: #fff;
+  background-color: #f6f6f6;
   color: #000;
 }
 
@@ -1082,8 +1084,9 @@ body.light-mode .nav-bar.floatingNav {
 }
 
 body.light-mode .skillcard:hover {
-  background-color: #f4f4f4;
+  background-color: #fff;
   color: #000;
+  border: 1px dashed #cd5ff8;
 }
 
 body.light-mode .timelinecontainer .date {
@@ -1115,7 +1118,9 @@ body.light-mode .timelinecontainer .content p {
 }
 
 body.light-mode .timelinecontainer .content {
-  background-color: #f4f4f4;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 0px 21px #e3e3e3;
+          box-shadow: 0px 0px 21px #e3e3e3;
 }
 
 body.light-mode .jsonpara b {
@@ -1131,9 +1136,9 @@ body.light-mode .draw-border:hover {
 }
 
 body.light-mode .projectcard {
-  background-color: #f4f4f4;
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 0px 21px #e1e1e1;
+          box-shadow: 0px 0px 21px #e1e1e1;
 }
 
 body.light-mode ul.headernav li a {
@@ -1146,6 +1151,24 @@ body.light-mode ul.headernav li a:hover {
 
 body.light-mode p {
   color: #000;
+}
+
+body.light-mode .social-icons li {
+  border: 1px solid #8e8c8f;
+  background-color: #fff;
+}
+
+body.light-mode .social-icons li:hover {
+  background-color: #cd5ff8;
+}
+
+body.light-mode .social-icons li:hover a {
+  color: #fff;
+}
+
+body.light-mode .timeline::after {
+  background: #8e8c8f;
+  opacity: 0.3;
 }
 
 @media screen and (max-width: 1024px) {
@@ -1342,7 +1365,7 @@ body.light-mode p {
   .timelinecontainer.left::before,
   .timelinecontainer.right::before {
     left: 0;
-    border-color: transparent #006E51 transparent transparent;
+    border-color: transparent #8e8c8f transparent transparent;
   }
   .timelinecontainer.left .date,
   .timelinecontainer.right .date {

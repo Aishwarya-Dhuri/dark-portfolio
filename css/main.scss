@@ -12,6 +12,8 @@ $dim-white:#d6d9e0;
 $cardbg:#293340;
 $footerbglight:#ece9fd;
 $cardbglight:#f4f4f4;
+$bglightmode:#f6f6f6;
+$lightgrey:#8e8c8f;
 html { 
   scroll-behavior: smooth; 
 }
@@ -508,7 +510,7 @@ h2.gradient-text{
   content: '';
   position: absolute;
   width: 2px;
-  background: #006E51;
+  background: $lightgrey;
   top: 0;
   bottom: 0;
   left: 50%;
@@ -538,7 +540,7 @@ h2.gradient-text{
   top: calc(50% - 8px);
   right: -8px;
   background: #ffffff;
-  border: 2px solid #006E51;
+  border: 2px solid $lightgrey;
   border-radius: 16px;
   z-index: 1;
 }
@@ -554,7 +556,7 @@ h2.gradient-text{
   height: 2px;
   top: calc(50% - 1px);
   right: 8px;
-  background: #006E51;
+  background: $lightgrey;
   z-index: 1;
 }
 
@@ -573,6 +575,8 @@ h2.gradient-text{
   text-transform: uppercase;
   letter-spacing: 1px;
   z-index: 1;
+  z-index: 1;
+
 }
 
 .timelinecontainer.left .date {
@@ -622,7 +626,7 @@ h2.gradient-text{
 .timelinecontainer .content h2 {
   margin: 0 0 10px 0;
   font-size: 18px;
-  font-weight: normal;
+  font-weight: 600;
   color: $violet;
 }
 
@@ -630,7 +634,8 @@ h2.gradient-text{
   margin: 0;
   font-size: 16px;
   line-height: 22px;
-  color: $dim-white;
+  color: $white;
+  font-weight: 500;
 }
 .projectsec{
   margin:100px 0 70px 0;
@@ -851,7 +856,7 @@ footer{
   display: none;
 }
 body.light-mode{
-  background-color: $white;
+  background-color: $bglightmode;
   color: $black;
   .bannersec h3{
     color: $black;
@@ -864,8 +869,9 @@ body.light-mode{
 
   }
   .skillcard:hover{
-    background-color: $cardbglight;
+    background-color: $white;
     color: $black;
+    border: 1px dashed $violet;
   }
   .timelinecontainer .date{
     color: #b0b0b0;
@@ -894,7 +900,8 @@ body.light-mode{
     color: $black;
   }
   .timelinecontainer .content{
-    background-color: $cardbglight;
+    background-color: $white;
+    box-shadow: 0px 0px 21px #e3e3e3;
   }
   .jsonpara b{
     color: $black;
@@ -907,9 +914,8 @@ body.light-mode{
     };
   }
   .projectcard{
-    background-color: #f4f4f4;
-    box-shadow: none;
-
+    background-color: $white;
+    box-shadow: 0px 0px 21px #e1e1e1;
   }
   ul.headernav li a{
     color: $black;
@@ -919,6 +925,21 @@ body.light-mode{
   }
   p{
     color: $black;
+  }
+  .social-icons li{
+    border: 1px solid $lightgrey;
+    background-color: $white;
+    &:hover{
+      background-color: $violet;
+      a{
+        color: $white;
+      }
+    }
+   
+  }
+  .timeline::after{
+    background: $lightgrey;
+    opacity: 0.3;
   }
 }
 @media screen and (max-width: 1024px) {
@@ -1130,7 +1151,7 @@ body.light-mode{
   .timelinecontainer.left::before,
   .timelinecontainer.right::before {
     left: 0;
-    border-color: transparent #006E51 transparent transparent;
+    border-color: transparent $lightgrey transparent transparent;
   }
 
   .timelinecontainer.left .date,
