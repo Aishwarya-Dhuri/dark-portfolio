@@ -78,7 +78,7 @@ burger.addEventListener('click', () => {
         },
         {
             name : 'Kiaar',
-            description: 'build  website from stratch using bootstrap 4, html,css and JS',
+            description: 'Built  website from stratch using bootstrap 4, html,css and JS',
             img_path: 'images/projects/kiaar.jpg',
             live_link : 'https://kiaar.org/en',
             github_link: 'https://github.com/Aishwarya-Dhuri/kiaar'
@@ -92,28 +92,28 @@ burger.addEventListener('click', () => {
         },
         {
             name : 'Somaiya Vidyavihar University',
-            description: 'build  website from stratch using bootstrap 4, html,css and JS using Somaiya brand guidelines',
+            description: 'Built  website from stratch using bootstrap 4, html,css and JS using Somaiya brand guidelines',
             img_path: 'images/projects/SVU.jpg',
             live_link : 'https://www.somaiya.edu/en',
             github_link: 'https://github.com/Aishwarya-Dhuri/somaiya-branding'
         },
         {
             name : 'Somaiya B.ED',
-            description: 'build  website from stratch using bootstrap 4, html,css and JS using Somaiya brand guidelines',
+            description: 'Built  website from stratch using bootstrap 4, html,css and JS using Somaiya brand guidelines',
             img_path: 'images/projects/education.jpg',
             live_link : 'https://education.somaiya.edu/en',
             github_link: 'https://github.com/Aishwarya-Dhuri/somaiya-branding'
         },
         {
             name : 'Somaiya Research',
-            description: 'build  website from stratch using bootstrap 4, html,css and JS using Somaiya brand guidelines',
+            description: 'Built  website from stratch using bootstrap 4, html,css and JS using Somaiya brand guidelines',
             img_path: 'images/projects/research.jpg',
             live_link : 'https://research.somaiya.edu/en',
             github_link: 'https://github.com/Aishwarya-Dhuri/somaiya-branding'
         },
         {
             name : 'Examluck',
-            description: 'build  website from stratch using bootstrap 3, html,css and JS with Ui design',
+            description: 'Built  website from stratch using bootstrap 3, html,css and JS with Ui design',
             img_path: 'images/projects/examluck.jpg',
             live_link : 'https://aishwarya-dhuri.github.io/examluck/index.html',
             github_link: 'https://github.com/Aishwarya-Dhuri/examluck'
@@ -131,6 +131,13 @@ burger.addEventListener('click', () => {
             img_path: 'images/projects/repogithubfinder.jpg',
             live_link : 'https://github-repo-angular.web.app/signin',
             github_link: 'https://github.com/Aishwarya-Dhuri/github-repofetch-angular'
+        },
+        {
+            name : 'Frontend Mentor Projects',
+            description: 'Built various mini projects from frontendmentor website',
+            img_path: 'images/projects/frontendmentor.jpg',
+            live_link : 'https://aishwarya-dhuri.github.io/Frontend-mentor-challenges/',
+            github_link: 'https://github.com/Aishwarya-Dhuri/Frontend-mentor-challenges'
         },
       ]
 

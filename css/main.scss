@@ -430,18 +430,22 @@ h2{
   }
   &:first-of-type{
     &::before{
-      background-image: url(/images/mba.png);
+      background-image: url(../images/mba.png);
     }
   }
   &:last-of-type{
     &::before{
-      background-image: url(/images/cs.png);
+      background-image: url(../images/cs.png);
     }
   }
  
 }
 .educard:first-of-type{
     margin-bottom: 40px;
+}
+#projectswrapper{
+  display: flex;
+  justify-content: center;
 }
 .jsonpara{
   font-size: 20px;
