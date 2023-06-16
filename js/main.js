@@ -70,6 +70,13 @@ burger.addEventListener('click', () => {
 
     const projectsObj = [
         {
+            name : 'Frontend Mentor Projects',
+            description: 'Built various mini projects from frontendmentor website',
+            img_path: 'images/projects/frontendmentor.jpg',
+            live_link : 'https://aishwarya-dhuri.github.io/Frontend-mentor-challenges/',
+            github_link: 'https://github.com/Aishwarya-Dhuri/Frontend-mentor-challenges'
+        },
+        {
           name : 'BBPS',
           description: ' Worked on PSD to HTML conversion with interactive animation effects',
           img_path: 'images/projects/bbca.jpg',
@@ -84,11 +91,25 @@ burger.addEventListener('click', () => {
             github_link: 'https://github.com/Aishwarya-Dhuri/kiaar'
         },
         {
+            name : 'Examluck',
+            description: 'Built  website from stratch using bootstrap 3, html,css and JS with Ui design',
+            img_path: 'images/projects/examluck.jpg',
+            live_link : 'https://aishwarya-dhuri.github.io/examluck/index.html',
+            github_link: 'https://github.com/Aishwarya-Dhuri/examluck'
+        },
+        {
             name : 'Random User Generator',
             description: 'Worked with Random User API to generate random user using Angular',
             img_path: 'images/projects/randomuser-angular.jpg',
             live_link : 'https://aishwarya-dhuri.github.io/angular-random-user/',
             github_link: 'https://github.com/Aishwarya-Dhuri/angular-random-user'
+        },
+        {
+            name : 'Github Repo finder',
+            description: 'Worked with Github API to fectch respositories list using name in Angular framework with authentication functionality',
+            img_path: 'images/projects/repogithubfinder.jpg',
+            live_link : 'https://github-repo-angular.web.app/signin',
+            github_link: 'https://github.com/Aishwarya-Dhuri/github-repofetch-angular'
         },
         {
             name : 'Somaiya Vidyavihar University',
@@ -112,33 +133,14 @@ burger.addEventListener('click', () => {
             github_link: 'https://github.com/Aishwarya-Dhuri/somaiya-branding'
         },
         {
-            name : 'Examluck',
-            description: 'Built  website from stratch using bootstrap 3, html,css and JS with Ui design',
-            img_path: 'images/projects/examluck.jpg',
-            live_link : 'https://aishwarya-dhuri.github.io/examluck/index.html',
-            github_link: 'https://github.com/Aishwarya-Dhuri/examluck'
-        },
-        {
             name : 'Travelgram',
             description: 'Insta inspired clone for travellers to upload images, like and dislike post with authentication functionality',
             img_path: 'images/projects/travelgram.jpg',
             live_link : 'https://travelgram-bea28.web.app/',
             github_link: 'https://github.com/Aishwarya-Dhuri/travelgram-angular'
-        },
-        {
-            name : 'Github Repo finder',
-            description: 'Worked with Github API to fectch respositories list using name in Angular framework with authentication functionality',
-            img_path: 'images/projects/repogithubfinder.jpg',
-            live_link : 'https://github-repo-angular.web.app/signin',
-            github_link: 'https://github.com/Aishwarya-Dhuri/github-repofetch-angular'
-        },
-        {
-            name : 'Frontend Mentor Projects',
-            description: 'Built various mini projects from frontendmentor website',
-            img_path: 'images/projects/frontendmentor.jpg',
-            live_link : 'https://aishwarya-dhuri.github.io/Frontend-mentor-challenges/',
-            github_link: 'https://github.com/Aishwarya-Dhuri/Frontend-mentor-challenges'
-        },
+        }
+      
+       
       ]
 
 
