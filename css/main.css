@@ -1000,7 +1000,7 @@ footer p {
           justify-content: center;
   border-bottom: 1px dotted #3b3b3b;
   padding-bottom: 30px;
-  margin-top: 20px;
+  margin-top: 0;
 }
 
 .social-icons li {
