@@ -77,12 +77,13 @@ burger.addEventListener('click', () => {
             github_link: 'https://github.com/Aishwarya-Dhuri/Frontend-mentor-challenges'
         },
         {
-          name : 'BBPS',
-          description: ' Worked on PSD to HTML conversion with interactive animation effects',
-          img_path: 'images/projects/bbca.jpg',
-          live_link : 'https://bbps.ca/',
-          github_link: 'https://github.com/Aishwarya-Dhuri/bbps'
+            name : 'Examluck',
+            description: 'Built  website from stratch using bootstrap 3, html,css and JS with Ui design',
+            img_path: 'images/projects/examluck.jpg',
+            live_link : 'https://aishwarya-dhuri.github.io/examluck/index.html',
+            github_link: 'https://github.com/Aishwarya-Dhuri/examluck'
         },
+       
         {
             name : 'Kiaar',
             description: 'Built  website from stratch using bootstrap 4, html,css and JS',
@@ -90,13 +91,7 @@ burger.addEventListener('click', () => {
             live_link : 'https://kiaar.org/en',
             github_link: 'https://github.com/Aishwarya-Dhuri/kiaar'
         },
-        {
-            name : 'Examluck',
-            description: 'Built  website from stratch using bootstrap 3, html,css and JS with Ui design',
-            img_path: 'images/projects/examluck.jpg',
-            live_link : 'https://aishwarya-dhuri.github.io/examluck/index.html',
-            github_link: 'https://github.com/Aishwarya-Dhuri/examluck'
-        },
+        
         {
             name : 'Random User Generator',
             description: 'Worked with Random User API to generate random user using Angular',
@@ -138,8 +133,14 @@ burger.addEventListener('click', () => {
             img_path: 'images/projects/travelgram.jpg',
             live_link : 'https://travelgram-bea28.web.app/',
             github_link: 'https://github.com/Aishwarya-Dhuri/travelgram-angular'
-        }
-      
+        },
+        {
+            name : 'BBPS',
+            description: ' Worked on PSD to HTML conversion with interactive animation effects',
+            img_path: 'images/projects/bbca.jpg',
+            live_link : 'https://aishwarya-dhuri.github.io/bbps/index.html',
+            github_link: 'https://github.com/Aishwarya-Dhuri/bbps'
+        },
        
       ]
 
