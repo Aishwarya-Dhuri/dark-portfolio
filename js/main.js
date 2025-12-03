@@ -1,7 +1,7 @@
 
 var options = {
     strings: [
-        "Front End  Developer",
+        "Angular Front End  Developer",
         "JavaScript Developer",
         "UI/UX Designer",
     ],
@@ -168,7 +168,10 @@ burger.addEventListener('click', () => {
         projsec.appendChild(proj);
     
       });
-    
+       const currentDate = new Date();
+        const currentYear = currentDate.getFullYear();
+
+        document.getElementById("currentYear").innerHTML = currentYear;
 
     
     });
